@@ -1,0 +1,57 @@
+baseURL = 'https://joseybarlow.com/'
+languageCode = 'en-us'
+title = "Josey Barlow"
+theme = 'starry'
+
+# Pagination (how many posts show per page on list views)
+[pagination]
+  pagerSize = 10
+
+[params]
+  # Shown under your name / in the site header, per the Starry theme's about-card style
+  subtitle = "Electrical Engineering · Baking · Crochet"
+  author = "Josey Barlow"
+  description = "Portfolio and notes from Josey Barlow — senior Electrical Engineering student, home baker, and crochet hobbyist."
+
+  # Toggle dark mode switch in the theme UI, if supported
+  darkMode = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Posts"
+    url = "/archives/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "newsletter"
+    name = "Newsletter"
+    url = "/newsletter/"
+    weight = 5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

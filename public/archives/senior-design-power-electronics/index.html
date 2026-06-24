@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<meta name="keywords"
+      content="Kicking Off My Senior Design Project: A Power Electronics Build,"/>
+<meta name="description" content="Notes from week one of my capstone project."/>
+
+
+
+
+<title>Kicking Off My Senior Design Project: A Power Electronics Build - My New Hugo Project</title>
+
+<script src="/js/theme-init.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <a href="" class="header-title" title=""></a>
+        
+
+        <button id="mobileHeaderMenu" class="mobile-header-menu" aria-expanded="false">
+            <svg class="header-menu-list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <title>Open menu list</title>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="header-menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <title>Close menu list</title>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</header>
+<main>
+    <div class="main-container">
+
+
+<div class="single single-two-col">
+    <div class="single-left" id="singleLeft">
+        
+
+<script>(function () {
+        let mathjaxList = null;
+
+        function initMathjaxList() {
+            
+            mathjaxList = [...document.querySelectorAll("mjx-container")];
+        }
+
+        function resizeInlineMathjax() {
+            if (!mathjaxList) return;
+
+            mathjaxList.forEach(el => {
+                const parent = el.parentElement;
+                if (!parent) return;
+
+                const parentWidth = parent.getBoundingClientRect().width;
+                const selfWidth = el.getBoundingClientRect().width;
+
+                const isInline = el.hasAttribute("mt-inline");
+                const isDisplay = el.getAttribute("display") === "true";
+
+                
+                if (selfWidth > parentWidth && !isDisplay) {
+                    el.setAttribute("display", "true");
+                    el.setAttribute("mt-inline", "true");
+                }
+                
+                else if (selfWidth <= parentWidth && isInline) {
+                    el.removeAttribute("display");
+                    el.removeAttribute("mt-inline");
+                }
+            });
+        }
+
+
+        const singleLeft = document.getElementById("singleLeft");
+        if (singleLeft) {
+            
+            singleLeft.classList.add("single-left-loading");
+
+
+            const t0 = performance.now();
+            window.addEventListener("load", function () {
+                initMathjaxList();
+                resizeInlineMathjax();
+                const interval = 2000;
+                const _interval = performance.now() - t0;
+                if (_interval > interval) {
+                    singleLeft.classList.remove("single-left-loading");
+                } else {
+                    setTimeout(() => {
+                        singleLeft.classList.remove("single-left-loading");
+                    }, interval);
+                }
+            });
+
+            let resizeTimer;
+            window.addEventListener("resize", function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    resizeInlineMathjax();
+                }, 1000);
+            });
+        }
+        window.MathJax = {
+            tex: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]]
+            },
+            svg: {
+                fontCache: "global"
+            }
+        };
+})();</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+
+
+
+
+<div class="single-categories">
+
+
+    <a class="tag" href="/categories/engineering/">Engineering</a>
+
+
+
+</div>
+
+<div class="single-title">Kicking Off My Senior Design Project: A Power Electronics Build</div>
+<div class="single-divider"></div>
+<div class="single-meta">
+    <div class="single-dates">
+        
+        
+        
+        
+        
+        
+        <time class="single-date-item" datetime="2026-06-24T09:00:00-05:00">2026-06-24 09:00:00 · Published</time>
+        <time class="single-date-item" datetime="2026-06-24T12:37:25-05:00">2026-06-24 12:37:25 · Updated</time>
+    </div>
+    <div class="single-tags">
+
+
+    <a class="tag" href="/tags/electrical-engineering/">Electrical-Engineering</a>
+    <a class="tag" href="/tags/senior-design/">Senior-Design</a>
+    <a class="tag" href="/tags/power-electronics/">Power-Electronics</a>
+
+
+
+</div>
+
+</div>
+<div class="single-note">This article is continuously updated and revised. The latest version shall prevail. Reproduction or citation requires clear attribution to the author and a link to the original source.</div>
+<div class="single-post">
+    
+    
+    <div><span class="post-bookmark">Summary</span></div>
+    <p>Notes from week one of my capstone project.</p>
+    <div><span class="post-bookmark">Content</span></div>
+    
+<p>This semester I&rsquo;m finally starting my senior design project, and I wanted to start documenting it here as I go — partly for anyone else working through something similar, and partly so future-me remembers why I made the decisions I did.</p>
+<h2 id="the-project">The project</h2>
+<p>I&rsquo;m building a small DC-DC converter board to demonstrate efficient power delivery for a low-voltage embedded system. The rough goals:</p>
+<ul>
+<li>Input: 12V from a standard wall adapter</li>
+<li>Output: regulated 5V and 3.3V rails</li>
+<li>Efficiency target: &gt;90% at typical load</li>
+<li>Compact enough to fit on a single 2-layer PCB</li>
+</ul>
+<h2 id="why-this-topology">Why this topology</h2>
+<p>I&rsquo;m going with a synchronous buck converter rather than a simple linear regulator. The efficiency math makes the reasoning pretty clear. For a linear regulator, efficiency is roughly:</p>
+<p>$$\eta \approx \frac{V_{out}}{V_{in}}$$</p>
+<p>Stepping 12V down to 3.3V on a linear regulator would mean throwing away most of the input power as heat. A switching converter doesn&rsquo;t have that problem, since it stores and transfers energy rather than dissipating the difference.</p>
+<h2 id="whats-next">What&rsquo;s next</h2>
+<p>Next up is finalizing the inductor and capacitor selection, then moving into simulation before I commit to ordering parts. I&rsquo;ll post an update once I have a working schematic.</p>
+<p>If you&rsquo;re also working through a senior design project this year, I&rsquo;d love to hear what you&rsquo;re building.</p>
+    
+</div>
+
+<div class="single-nav">
+    
+
+    
+    <div class="item" onclick="this.querySelector('a').click()">
+        <div class="item-key">Next</div>
+        <a class="item-value" href="/archives/first-sourdough-loaf/">My First Sourdough Loaf That Actually Worked</a>
+    </div>
+    
+</div>
+
+
+<div class="single-btn">
+    <button class="btn" id="rewardBtn">Donate</button>
+    <button class="btn" id="shareBtn">Share</button>
+</div>
+<div id="single-gitalk"></div>
+<link rel="stylesheet" href="/css/gitalk-theme.min.css">
+<script src="/js/gitalk.min.js" ></script>
+<script>(function () {
+
+    const gitalk = new Gitalk({
+        id: location.pathname,});
+
+    gitalk.render("single-gitalk");
+})();</script>
+
+
+    </div>
+    <div class="single-right" id="toc">
+        <div class="toc-title">Outline</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-project">The project</a></li>
+    <li><a href="#why-this-topology">Why this topology</a></li>
+    <li><a href="#whats-next">What&rsquo;s next</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+</div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="info">
+            <div class="item" title="Unique visitors on this page (IP deduplicated)" id="stats" aria-expanded="">
+                <div class="item-key">Visitors</div>
+                <div class="item-value" id="statsValue">99</div>
+            </div>
+            <div class="item" title=" Time running until now">
+                <div class="item-key">Uptime</div>
+                <div class="item-value" id="timeValue" data-site-begin="">
+                    <span id="timeYear">99</span><span> y </span><span id="timeDay">99</span><span> d </span><span id="timeHour">99</span><span> h </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div>
+    <div class="starry" id="starry"></div>
+    <div id="progressContainer"><div id="progressBar"></div></div>
+    
+<div class="sidebar-tools" id="sidebarTools"  aria-expanded="" >
+    <button class="tool-btn" id="searchBtn" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <title>Search</title>
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+    </button>
+    <button class="tool-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <title>Sun mode</title>
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <title>Moon mode</title>
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+    <button class="tool-btn" id="scrollToTop" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <title>Scroll to top</title>
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+    <button class="tool-btn" id="scrollToBottom" aria-label="Scroll to bottom">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <title>Scroll to bottom</title>
+            <path d="M6 9l6 6 6-6"/>
+        </svg>
+    </button>
+    <button class="tool-btn" id="toolMenuSwitcher" aria-label="Expand/Collapse toolbar">
+        <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <title>Expand toolbar</title>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="collapse-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <title>Collapse toolbar</title>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </button>
+</div>
+    <div class="interaction">
+    <div class="toast toast-success" id="shareBtnToastSuccess">
+        <span>Link copied successfully</span>
+    </div>
+    <div class="toast toast-error" id="shareBtnToastError">
+        <span>Failed to copy the link. Please try again or use a different browser</span>
+    </div>
+    <div class="toast toast-success" id="codeCopyToastSuccess">
+        <span>Copied successfully</span>
+    </div>
+    <div class="toast toast-success" id="codeCopyToastError">
+        <span>Copy failed. Please try again or use a different browser</span>
+    </div>
+    <div class="modal-overlay" id="rewardBtnModal">
+        <button class="modal-close">×</button>
+        <div class="modal-content">
+            <div class="modal-title">Thank you for your support</div>
+            <div class="model-subtitle">Scan the QR code to support the author</div>
+            <img src="/reward.jpg" class="qrcode">
+            <div class="modal-note">If this article helps, consider tipping using its title as a note</div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="searchBtnModal">
+        <button class="modal-close">×</button>
+        <div class="search-content">
+            <div class="search-header">
+                <input class="search-input" id="searchInput" placeholder="Enter keywords to search..." autocomplete="off"/>
+            </div>
+            <div class="search-result">
+                <div class="state-loading" id="stateLoading">Building index library...</div>
+                <div class="state-idle search-active" id="stateIdle">Please enter keywords to start searching</div>
+                <div class="state-empty" id="stateEmpty">No matching results found</div>
+                <div class="state-searching" id="stateSearching">Searching...</div>
+                <div class="state-success" id="stateSuccess">
+                    <div>Matched results - <span id="resultNum">99</span></div>
+                    <div class="result-inner" id="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="/js/viewer.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.js"></script>
+
+<script>(function () {
+    const ct = window.Starry.prototype.varConfiguration;
+    ct.varSearchIndex = "\/index.json";})();</script>
+
+
+</body>
+</html>

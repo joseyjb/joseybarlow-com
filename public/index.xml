@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>My New Hugo Project</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on My New Hugo Project</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 24 Jun 2026 12:00:00 -0500</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Kicking Off My Senior Design Project: A Power Electronics Build</title>
+				<link>http://localhost:1313/archives/senior-design-power-electronics/</link>
+				<pubDate>Wed, 24 Jun 2026 09:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/archives/senior-design-power-electronics/</guid>
+				<description>&lt;p&gt;Notes from week one of my capstone project.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Newsletter</title>
+				<link>http://localhost:1313/newsletter/</link>
+				<pubDate>Wed, 24 Jun 2026 12:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/newsletter/</guid>
+				<description>&lt;p&gt;Get new posts by email&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Wed, 24 Jun 2026 12:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;p&gt;About Me&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>My First Sourdough Loaf That Actually Worked</title>
+				<link>http://localhost:1313/archives/first-sourdough-loaf/</link>
+				<pubDate>Sat, 20 Jun 2026 09:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/archives/first-sourdough-loaf/</guid>
+				<description>&lt;p&gt;Three failed loaves later, I finally got one right.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Starting a Granny Square Blanket: Color Planning</title>
+				<link>http://localhost:1313/archives/granny-square-blanket/</link>
+				<pubDate>Mon, 15 Jun 2026 09:00:00 -0500</pubDate>
+				<guid>http://localhost:1313/archives/granny-square-blanket/</guid>
+				<description>&lt;p&gt;The hardest part of any blanket isn&amp;rsquo;t the stitching, it&amp;rsquo;s picking the colors.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
