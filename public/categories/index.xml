@@ -20,19 +20,5 @@
 				<guid>http://localhost:1313/categories/engineering/</guid>
 				<description></description>
 			</item>
-			<item>
-				<title>Baking</title>
-				<link>http://localhost:1313/categories/baking/</link>
-				<pubDate>Sat, 20 Jun 2026 09:00:00 -0500</pubDate>
-				<guid>http://localhost:1313/categories/baking/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Crochet</title>
-				<link>http://localhost:1313/categories/crochet/</link>
-				<pubDate>Mon, 15 Jun 2026 09:00:00 -0500</pubDate>
-				<guid>http://localhost:1313/categories/crochet/</guid>
-				<description></description>
-			</item>
 	</channel>
 </rss>

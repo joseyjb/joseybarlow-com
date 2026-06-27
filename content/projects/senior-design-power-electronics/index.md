@@ -8,7 +8,7 @@ draft: false
 comments: true
 mathjax: true
 state: top
-weight: 1
+weight: 9999
 ---
 
 Notes from week one of my capstone project.

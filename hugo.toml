@@ -1,5 +1,5 @@
 baseURL = 'https://joseybarlow.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Josey Barlow'
 theme = 'kopi'
 
@@ -17,7 +17,7 @@ theme = 'kopi'
     pageRef = '/'
     weight = 10
   [[menu.main]]
-    name = 'About'
+    name = 'About Me'
     pageRef = '/about'
     weight = 20
   [[menu.main]]
@@ -28,6 +28,10 @@ theme = 'kopi'
     name = 'Hobbies & Fun'
     pageRef = '/hobbies'
     weight = 40
+  [[menu.main]]
+    name = 'Newsletter'
+    pageRef = '/newsletter' # <-- Keeps your newsletter ready for later
+    weight = 50
 
 [mediaTypes]
   [mediaTypes."application/radio+json"]
@@ -42,3 +46,8 @@ theme = 'kopi'
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "RADIO"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

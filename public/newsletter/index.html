@@ -40,7 +40,7 @@
     "description": "\"Get new posts by email\\n\"",
     "datePublished": "2026-06-24T12:00:00-05:00",
     "dateModified": "2026-06-24T12:00:00-05:00",
-    "wordCount":  35 ,
+    "wordCount":  69 ,
     "url": "http:\/\/localhost:1313\/newsletter\/",
     "author": {
         "@type": "Person",
@@ -107,19 +107,25 @@
                     
                     
                     
-                    <li><a href="http://localhost:1313/about/" class="">About</a></li>
+                    <li><a href="http://localhost:1313/about/" class="">About Me</a></li>
                     
                 
                     
                     
                     
-                    <li><a href="" class="">Engineering Projects</a></li>
+                    <li><a href="http://localhost:1313/projects/" class="">Engineering Projects</a></li>
                     
                 
                     
                     
                     
-                    <li><a href="" class="">Hobbies &amp; Fun</a></li>
+                    <li><a href="http://localhost:1313/hobbies/" class="">Hobbies &amp; Fun</a></li>
+                    
+                
+                    
+                    
+                    
+                    <li><a href="http://localhost:1313/newsletter/" class="active">Newsletter</a></li>
                     
                 
             </ul>
@@ -190,8 +196,40 @@
             <div class="article-body">
                 <p>Get new posts by email</p>
 <p>Want new engineering write-ups, recipes, and crochet patterns sent straight to your inbox? Sign up below — I send an email only when there&rsquo;s something new to share, no spam.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+  HOW TO ACTIVATE THIS FORM (pick ONE service, takes about 5 minutes):
+
+  Buttondown (simplest, generous free tier):
+    1. Create a free account at https://buttondown.com
+    2. Go to Settings -> Embeds, copy the embeddable HTML form
+    3. Paste it below, replacing the placeholder form
+
+  ConvertKit / Kit (more features, still free to start):
+    1. Create a free account at https://kit.com
+    2. Create a "Landing Page & Forms" -> Form, choose "Inline"
+    3. Copy the embed code it gives you and paste below
+
+  Mailchimp:
+    1. Create a free account at https://mailchimp.com
+    2. Audience -> Signup forms -> Embedded forms
+    3. Copy the generated <form> code and paste below
+
+  Whichever you pick, just replace the <form>...</form> block below
+  with the one the service gives you. Everything else on this page
+  (the heading, the text above) can stay exactly as is.
+-->
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/REPLACE_WITH_YOUR_USERNAME"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/REPLACE_WITH_YOUR_USERNAME', 'popupwindow')"
+  class="newsletter-form"
+>
+  <label for="bd-email">Email address</label>
+  <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+  <input type="submit" value="Subscribe">
+</form>
+<p><em>This form is a placeholder. See the comment in this file's source (or ask me) for the 5-minute setup to connect it to a real email service like Buttondown, Kit, or Mailchimp.</em></p>
             </div>
 
             
@@ -231,13 +269,13 @@
         <nav class="post-navigation">
             
             
-            <a href="http://localhost:1313/about/" class="nav-link prev">
+            <a href="http://localhost:1313/hobbies/sunflower-blanket/" class="nav-link prev">
                 <span class="nav-label">← Previous</span>
-                <span class="nav-title">About</span>
+                <span class="nav-title">Project Log: The Sunflower Crochet Bouquet Blanket</span>
             </a>
             
             
-            <a href="http://localhost:1313/archives/senior-design-power-electronics/" class="nav-link next">
+            <a href="http://localhost:1313/projects/senior-design-power-electronics/" class="nav-link next">
                 <span class="nav-label">Next →</span>
                 <span class="nav-title">Kicking Off My Senior Design Project: A Power Electronics Build</span>
             </a>
@@ -324,6 +362,18 @@
     <div class="widget">
         <div class="widget-title">Recent Posts</div>
         
+            
+            <div class="widget-recent-post-item ">
+                
+                    
+                    <img src="http://localhost:1313/hobbies/sunflower-blanket/featured_hu_8b4f61da4ec923d1.webp" alt="Project Log: The Sunflower Crochet Bouquet Blanket" loading="lazy" width="120" height="90">
+                
+                <div class="widget-recent-post-content">
+                    <a href="http://localhost:1313/hobbies/sunflower-blanket/" class="widget-recent-post-title">Project Log: The Sunflower Crochet Bouquet Blanket</a>
+                    <span class="widget-recent-post-date">Jun 27, 2026</span>
+                </div>
+            </div>
+        
     </div>
 
     
@@ -331,23 +381,17 @@
         <div class="widget-title">Explore Topics</div>
         <div class="widget-tags">
             
-            <a href="http://localhost:1313/tags/baking/" class="tag-pill">Baking <span class="tag-count">1</span></a>
-            
             <a href="http://localhost:1313/tags/blanket/" class="tag-pill">Blanket <span class="tag-count">1</span></a>
-            
-            <a href="http://localhost:1313/tags/bread/" class="tag-pill">Bread <span class="tag-count">1</span></a>
             
             <a href="http://localhost:1313/tags/crochet/" class="tag-pill">Crochet <span class="tag-count">1</span></a>
             
             <a href="http://localhost:1313/tags/electrical-engineering/" class="tag-pill">Electrical-Engineering <span class="tag-count">1</span></a>
             
-            <a href="http://localhost:1313/tags/granny-square/" class="tag-pill">Granny-Square <span class="tag-count">1</span></a>
-            
             <a href="http://localhost:1313/tags/power-electronics/" class="tag-pill">Power-Electronics <span class="tag-count">1</span></a>
             
             <a href="http://localhost:1313/tags/senior-design/" class="tag-pill">Senior-Design <span class="tag-count">1</span></a>
             
-            <a href="http://localhost:1313/tags/sourdough/" class="tag-pill">Sourdough <span class="tag-count">1</span></a>
+            <a href="http://localhost:1313/tags/yarn/" class="tag-pill">Yarn <span class="tag-count">1</span></a>
             
         </div>
     </div>

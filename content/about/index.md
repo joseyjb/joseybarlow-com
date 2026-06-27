@@ -1,17 +1,15 @@
 ---
-title: 'About'
-date: '2026-06-24T12:00:00-05:00'
+title: 'About Me'
+date: '2026-06-27T16:00:00-05:00'
 categories: []
 tags: []
-type: about
 draft: false
 comments: false
 mathjax: false
 state: none
-weight: 999999
+weight: 1
 ---
-
-About Me
+![About Me](./featured.JPG)
 
 <!--more-->
 

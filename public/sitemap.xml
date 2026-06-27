@@ -2,26 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/archives/senior-design-power-electronics/</loc>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/senior-design-power-electronics/</loc>
     <lastmod>2026-06-24T09:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/newsletter/</loc>
     <lastmod>2026-06-24T12:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2026-06-24T12:00:00-05:00</lastmod>
+    <loc>http://localhost:1313/tags/blanket/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/first-sourdough-loaf/</loc>
-    <lastmod>2026-06-20T09:00:00-05:00</lastmod>
+    <loc>http://localhost:1313/tags/crochet/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/granny-square-blanket/</loc>
-    <lastmod>2026-06-15T09:00:00-05:00</lastmod>
+    <loc>http://localhost:1313/hobbies/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hobbies/sunflower-blanket/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-24T12:00:00-05:00</lastmod>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-    <lastmod>2026-06-24T09:00:00-05:00</lastmod>
+    <loc>http://localhost:1313/tags/yarn/</loc>
+    <lastmod>2026-06-27T16:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-06-24T09:00:00-05:00</lastmod>
@@ -35,34 +44,10 @@
     <loc>http://localhost:1313/tags/power-electronics/</loc>
     <lastmod>2026-06-24T09:00:00-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-06-24T09:00:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/senior-design/</loc>
     <lastmod>2026-06-24T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-24T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/baking/</loc>
-    <lastmod>2026-06-20T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/baking/</loc>
-    <lastmod>2026-06-20T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/bread/</loc>
-    <lastmod>2026-06-20T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sourdough/</loc>
-    <lastmod>2026-06-20T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/blanket/</loc>
-    <lastmod>2026-06-15T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/crochet/</loc>
-    <lastmod>2026-06-15T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/crochet/</loc>
-    <lastmod>2026-06-15T09:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/granny-square/</loc>
-    <lastmod>2026-06-15T09:00:00-05:00</lastmod>
   </url>
 </urlset>
