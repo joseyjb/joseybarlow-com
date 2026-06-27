@@ -1,4 +1,44 @@
 baseURL = 'https://joseybarlow.com/'
-locale = 'en-us'
-title = 'My New Hugo Project'
-theme = 'starry'
+languageCode = 'en-us'
+title = 'Josey Barlow'
+theme = 'kopi'
+
+[params]
+  subtitle = 'What up'
+  [params.author]
+    name = "Josey Barlow"
+    bio = "Howdy! I'm a senior EE student at Texas A&M University. I enjoy working on projects, crafting, and hanging out with my big mean calico cat."
+    link = "/about" 
+    role = "Senior Electrical Engineering Student"
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+  [[menu.main]]
+    name = 'Engineering Projects'
+    pageRef = '/projects'
+    weight = 30
+  [[menu.main]]
+    name = 'Hobbies & Fun'
+    pageRef = '/hobbies'
+    weight = 40
+
+[mediaTypes]
+  [mediaTypes."application/radio+json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.RADIO]
+    mediaType = "application/radio+json"
+    baseName = "radio"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "RADIO"]

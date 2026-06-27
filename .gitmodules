@@ -1,3 +1,6 @@
 [submodule "themes/starry"]
 	path = themes/starry
 	url = https://github.com/meethigher/hugo-theme-starry.git
+[submodule "themes/kopi"]
+	path = themes/kopi
+	url = https://github.com/bect/kopi.git

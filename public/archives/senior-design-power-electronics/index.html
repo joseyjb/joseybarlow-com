@@ -1,181 +1,203 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="en-us">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-<meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notes from week one of my capstone project.">
+<title>Kicking Off My Senior Design Project: A Power Electronics Build - Josey Barlow</title>
+<link rel="canonical" href="http://localhost:1313/archives/senior-design-power-electronics/">
+<link rel="manifest" href="http://localhost:1313/manifest.json">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
+
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/archives/senior-design-power-electronics/">
+<meta property="og:title" content="Kicking Off My Senior Design Project: A Power Electronics Build">
+<meta property="og:description" content="Notes from week one of my capstone project.
+">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:1313/archives/senior-design-power-electronics/">
+<meta property="twitter:title" content="Kicking Off My Senior Design Project: A Power Electronics Build">
+<meta property="twitter:description" content="Notes from week one of my capstone project.
+">
 
 
 
 
 
-<meta name="keywords"
-      content="Kicking Off My Senior Design Project: A Power Electronics Build,"/>
-<meta name="description" content="Notes from week one of my capstone project."/>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "\"Kicking Off My Senior Design Project: A Power Electronics Build\"",
+    "description": "\"Notes from week one of my capstone project.\\n\"",
+    "datePublished": "2026-06-24T09:00:00-05:00",
+    "dateModified": "2026-06-24T09:00:00-05:00",
+    "wordCount":  220 ,
+    "url": "http:\/\/localhost:1313\/archives\/senior-design-power-electronics\/",
+    "author": {
+        "@type": "Person",
+        "name": "{\"bio\":\"Howdy! I'm a senior EE student at Texas A\\u0026M University. I enjoy working on projects, crafting, and hanging out with my big mean calico cat.\",\"link\":\"/about\",\"name\":\"Josey Barlow\",\"role\":\"Senior Electrical Engineering Student\"}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "\"Josey Barlow\"",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http:\/\/localhost:1313\/icon-512.png"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/localhost:1313\/archives\/senior-design-power-electronics\/"
+    }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.51800ab1fd01a646403b7b785b6315f4f44d3ca6c6b5654b67fc978eb25711bb.css">
+
+
+<script type="module" src="http://localhost:1313/js/main.2d5250916a92d0ff7cdafd4c162b98107c6731d8bbd2b1111d3852e37b33e2bc.js"></script>
 
 
 
 
-<title>Kicking Off My Senior Design Project: A Power Electronics Build - My New Hugo Project</title>
-
-<script src="/js/theme-init.min.js"></script>
 
 
-<link rel="stylesheet" href="/css/main.min.css">
-
+<script>
+    (function() {
+        const getPreferredTheme = () => {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme) return storedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        document.documentElement.setAttribute('data-theme', getPreferredTheme());
+    })();
+</script>
 
 </head>
 <body>
-<header>
-    <div class="header-container">
-        <a href="" class="header-title" title=""></a>
-        
+    <header class="site-header">
+    <div class="header-inner">
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
 
-        <button id="mobileHeaderMenu" class="mobile-header-menu" aria-expanded="false">
-            <svg class="header-menu-list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <title>Open menu list</title>
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-            <svg class="header-menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <title>Close menu list</title>
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
+        <a href="http://localhost:1313/" class="logo">Josey Barlow</a>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                
+                
+                    
+                    
+                    
+                    <li><a href="http://localhost:1313/" class="">Home</a></li>
+                    
+                
+                    
+                    
+                    
+                    <li><a href="http://localhost:1313/about/" class="">About</a></li>
+                    
+                
+                    
+                    
+                    
+                    <li><a href="" class="">Engineering Projects</a></li>
+                    
+                
+                    
+                    
+                    
+                    <li><a href="" class="">Hobbies &amp; Fun</a></li>
+                    
+                
+            </ul>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" style="background:none; border:none; cursor:pointer; color:var(--text-main); padding: 5px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
     </div>
 </header>
-<main>
-    <div class="main-container">
 
-
-<div class="single single-two-col">
-    <div class="single-left" id="singleLeft">
-        
-
-<script>(function () {
-        let mathjaxList = null;
-
-        function initMathjaxList() {
+    <div class="main-wrapper">
+        <div class="container">
             
-            mathjaxList = [...document.querySelectorAll("mjx-container")];
-        }
 
-        function resizeInlineMathjax() {
-            if (!mathjaxList) return;
+<div class="breadcrumb">
+    <a href="http://localhost:1313/">Home</a>
+    
+        
+    
+        
+        / <a href="http://localhost:1313/archives/">Archives</a>
+        
+    
+    / <span>Kicking Off My Senior Design Project: A Power Electronics Build</span>
+</div>
 
-            mathjaxList.forEach(el => {
-                const parent = el.parentElement;
-                if (!parent) return;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "http:\/\/localhost:1313\/"
+    },{
+          "@type": "ListItem",
+          "position":  2 ,
+          "name": "\"Archives\"",
+          "item": "http:\/\/localhost:1313\/archives\/"
+        },{
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "\"Kicking Off My Senior Design Project: A Power Electronics Build\"",
+      "item": "http:\/\/localhost:1313\/archives\/senior-design-power-electronics\/"
+    }
+  ]
+}
+</script>
 
-                const parentWidth = parent.getBoundingClientRect().width;
-                const selfWidth = el.getBoundingClientRect().width;
-
-                const isInline = el.hasAttribute("mt-inline");
-                const isDisplay = el.getAttribute("display") === "true";
-
-                
-                if (selfWidth > parentWidth && !isDisplay) {
-                    el.setAttribute("display", "true");
-                    el.setAttribute("mt-inline", "true");
-                }
-                
-                else if (selfWidth <= parentWidth && isInline) {
-                    el.removeAttribute("display");
-                    el.removeAttribute("mt-inline");
-                }
-            });
-        }
-
-
-        const singleLeft = document.getElementById("singleLeft");
-        if (singleLeft) {
+<div class="content-grid">
+    
+    <main>
+        <article>
             
-            singleLeft.classList.add("single-left-loading");
-
-
-            const t0 = performance.now();
-            window.addEventListener("load", function () {
-                initMathjaxList();
-                resizeInlineMathjax();
-                const interval = 2000;
-                const _interval = performance.now() - t0;
-                if (_interval > interval) {
-                    singleLeft.classList.remove("single-left-loading");
-                } else {
-                    setTimeout(() => {
-                        singleLeft.classList.remove("single-left-loading");
-                    }, interval);
-                }
-            });
-
-            let resizeTimer;
-            window.addEventListener("resize", function () {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(() => {
-                    resizeInlineMathjax();
-                }, 1000);
-            });
-        }
-        window.MathJax = {
-            tex: {
-                inlineMath: [["$", "$"], ["\\(", "\\)"]],
-                displayMath: [["$$", "$$"], ["\\[", "\\]"]]
-            },
-            svg: {
-                fontCache: "global"
-            }
-        };
-})();</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
-
-
-
-
-<div class="single-categories">
-
-
-    <a class="tag" href="/categories/engineering/">Engineering</a>
-
-
-
-</div>
-
-<div class="single-title">Kicking Off My Senior Design Project: A Power Electronics Build</div>
-<div class="single-divider"></div>
-<div class="single-meta">
-    <div class="single-dates">
-        
-        
-        
-        
-        
-        
-        <time class="single-date-item" datetime="2026-06-24T09:00:00-05:00">2026-06-24 09:00:00 · Published</time>
-        <time class="single-date-item" datetime="2026-06-24T12:37:25-05:00">2026-06-24 12:37:25 · Updated</time>
-    </div>
-    <div class="single-tags">
-
-
-    <a class="tag" href="/tags/electrical-engineering/">Electrical-Engineering</a>
-    <a class="tag" href="/tags/senior-design/">Senior-Design</a>
-    <a class="tag" href="/tags/power-electronics/">Power-Electronics</a>
-
-
-
-</div>
-
-</div>
-<div class="single-note">This article is continuously updated and revised. The latest version shall prevail. Reproduction or citation requires clear attribution to the author and a link to the original source.</div>
-<div class="single-post">
-    
-    
-    <div><span class="post-bookmark">Summary</span></div>
-    <p>Notes from week one of my capstone project.</p>
-    <div><span class="post-bookmark">Content</span></div>
-    
+            <header class="article-header">
+                <div class="article-meta">Jun 24, 2026 • 2 min read</div>
+                <h1 class="article-title">Kicking Off My Senior Design Project: A Power Electronics Build</h1>
+                
+                
+                <div class="author-block">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <h5>Josey Barlow</h5>
+                        <span>Senior Electrical Engineering Student</span>
+                    </div>
+                    <div style="margin-left: auto;">
+                        <button class="btn-icon-action btn-share-native" data-title="Kicking Off My Senior Design Project: A Power Electronics Build" data-url="http://localhost:1313/archives/senior-design-power-electronics/" aria-label="Share">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="article-body">
+                <p>Notes from week one of my capstone project.</p>
 <p>This semester I&rsquo;m finally starting my senior design project, and I wanted to start documenting it here as I go — partly for anyone else working through something similar, and partly so future-me remembers why I made the decisions I did.</p>
 <h2 id="the-project">The project</h2>
 <p>I&rsquo;m building a small DC-DC converter board to demonstrate efficient power delivery for a low-voltage embedded system. The rough goals:</p>
@@ -192,185 +214,227 @@
 <h2 id="whats-next">What&rsquo;s next</h2>
 <p>Next up is finalizing the inductor and capacitor selection, then moving into simulation before I commit to ordering parts. I&rsquo;ll post an update once I have a working schematic.</p>
 <p>If you&rsquo;re also working through a senior design project this year, I&rsquo;d love to hear what you&rsquo;re building.</p>
-    
-</div>
-
-<div class="single-nav">
-    
-
-    
-    <div class="item" onclick="this.querySelector('a').click()">
-        <div class="item-key">Next</div>
-        <a class="item-value" href="/archives/first-sourdough-loaf/">My First Sourdough Loaf That Actually Worked</a>
-    </div>
-    
-</div>
-
-
-<div class="single-btn">
-    <button class="btn" id="rewardBtn">Donate</button>
-    <button class="btn" id="shareBtn">Share</button>
-</div>
-<div id="single-gitalk"></div>
-<link rel="stylesheet" href="/css/gitalk-theme.min.css">
-<script src="/js/gitalk.min.js" ></script>
-<script>(function () {
-
-    const gitalk = new Gitalk({
-        id: location.pathname,});
-
-    gitalk.render("single-gitalk");
-})();</script>
-
-
-    </div>
-    <div class="single-right" id="toc">
-        <div class="toc-title">Outline</div>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-project">The project</a></li>
-    <li><a href="#why-this-topology">Why this topology</a></li>
-    <li><a href="#whats-next">What&rsquo;s next</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
-
-</div>
-</main>
-<footer>
-    <div class="footer-container">
-        <div class="info">
-            <div class="item" title="Unique visitors on this page (IP deduplicated)" id="stats" aria-expanded="">
-                <div class="item-key">Visitors</div>
-                <div class="item-value" id="statsValue">99</div>
             </div>
-            <div class="item" title=" Time running until now">
-                <div class="item-key">Uptime</div>
-                <div class="item-value" id="timeValue" data-site-begin="">
-                    <span id="timeYear">99</span><span> y </span><span id="timeDay">99</span><span> d </span><span id="timeHour">99</span><span> h </span>
+
+            
+            <footer class="article-footer">
+                
+                <div class="article-tags">
+                    <strong>Tags:</strong>
+                    
+                    <a href="http://localhost:1313/tags/electrical-engineering/" class="tag-pill">Electrical-Engineering</a>
+                    
+                    <a href="http://localhost:1313/tags/senior-design/" class="tag-pill">Senior-Design</a>
+                    
+                    <a href="http://localhost:1313/tags/power-electronics/" class="tag-pill">Power-Electronics</a>
+                    
+                </div>
+                
+                
+                <div class="article-actions">
+                    <div class="action-group">
+                        <button class="btn-icon-action btn-bookmark" 
+                            data-url="http://localhost:1313/archives/senior-design-power-electronics/" 
+                            data-title="Kicking Off My Senior Design Project: A Power Electronics Build" 
+                            data-date="Jun 24, 2026"
+                            data-summary="Notes from week one of my capstone project.
+"
+                            
+                            aria-label="Save to Library">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                            <span class="action-label">Save to Library</span>
+                        </button>
+                    </div>
+                    <div class="action-group">
+                        <a href="https://twitter.com/intent/tweet?text=Kicking&#43;Off&#43;My&#43;Senior&#43;Design&#43;Project%3A&#43;A&#43;Power&#43;Electronics&#43;Build&url=http%3A%2F%2Flocalhost%3A1313%2Farchives%2Fsenior-design-power-electronics%2F" target="_blank" rel="noopener noreferrer" class="btn-icon-action" aria-label="Share on Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Farchives%2Fsenior-design-power-electronics%2F" target="_blank" rel="noopener noreferrer" class="btn-icon-action" aria-label="Share on Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <button class="btn-icon-action btn-copy-link" data-url="http://localhost:1313/archives/senior-design-power-electronics/" aria-label="Copy Link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </footer>
+        </article>
+
+        
+        <nav class="post-navigation">
+            
+            
+            <a href="http://localhost:1313/newsletter/" class="nav-link prev">
+                <span class="nav-label">← Previous</span>
+                <span class="nav-title">Newsletter</span>
+            </a>
+            
+            
+        </nav>
+    </main>
+
+    <div id="persistent-sidebar" data-turbo-permanent>
+        <aside class="sidebar">
+    <div class="widget search-widget">
+        <form action="http://localhost:1313/search/" method="get" class="search-box">
+            <input type="text" name="q" placeholder="Search articles..." aria-label="Search">
+            <button type="submit" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </form>
+    </div>
+
+    
+
+
+
+<div class="widget">
+    <div class="widget-radio" id="radioWidget">
+        
+        <canvas id="radioCanvas" class="radio-bg-visualizer" width="200" height="100"></canvas>
+
+
+
+        
+        <div class="radio-controls-container">
+            
+            <div class="radio-top-row">
+                <div class="radio-status-display" id="radioStatusDisplay">
+                    <span class="live-dot"></span>
+                    <span>READY</span>
+                </div>
+
+                <div class="radio-station-title">
+                    Tentrem FM
+                </div>
+
+                <div class="radio-controls-group">
+                    <button class="btn-radio-play btn-transparent" id="radioPlayBtn">
+                        <svg class="icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        <svg class="icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                    </button>
+
+                    <button class="btn-radio-cycle btn-transparent" id="btnCycleStation" aria-label="Next Station" title="Next Station">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 4 15 12 5 20 5 4"></polygon><rect x="19" y="5" width="2" height="14"></rect></svg>
+                    </button>
                 </div>
             </div>
+
+            
+            <div class="radio-bottom-row">
+                <div class="radio-volume-inline">
+                    <button class="btn-radio-volume btn-transparent" id="btnVolume" aria-label="Volume">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        </svg>
+                    </button>
+                    <div class="volume-popup">
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" aria-label="Volume Slider">
+                    </div>
+                </div>
+
+                <div class="radio-station-desc">
+                    On air 24 Jam.
+                </div>
+            </div>
+        </div>
+
+
+
+        <audio id="radioAudio" preload="none"></audio>
+    </div>
+</div>
+
+
+
+    
+    <div class="widget">
+        <div class="widget-title">Recent Posts</div>
+        
+    </div>
+
+    
+    <div class="widget">
+        <div class="widget-title">Explore Topics</div>
+        <div class="widget-tags">
+            
+            <a href="http://localhost:1313/tags/baking/" class="tag-pill">Baking <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/blanket/" class="tag-pill">Blanket <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/bread/" class="tag-pill">Bread <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/crochet/" class="tag-pill">Crochet <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/electrical-engineering/" class="tag-pill">Electrical-Engineering <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/granny-square/" class="tag-pill">Granny-Square <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/power-electronics/" class="tag-pill">Power-Electronics <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/senior-design/" class="tag-pill">Senior-Design <span class="tag-count">1</span></a>
+            
+            <a href="http://localhost:1313/tags/sourdough/" class="tag-pill">Sourdough <span class="tag-count">1</span></a>
+            
+        </div>
+    </div>
+    
+    
+    <div class="widget">
+        <div class="widget-title">Subscribe</div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Get the latest updates delivered directly to your inbox.</p>
+        <button class="btn btn-subscribe" style="width: 100%; justify-content: center;">Join Newsletter</button>
+    </div>
+
+    
+    
+
+</aside>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    
+<div id="toastContainer" class="toast-container"></div>
+
+
+<div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-content">
+        <h4>Cookie Policy</h4>
+        <p>We use cookies to improve your experience and analyze site traffic.</p>
+    </div>
+    <div class="cookie-actions">
+        <button class="btn btn-accept" id="btnAcceptCookies">Accept</button>
+        <button class="btn btn-decline" id="btnDeclineCookies">Decline</button>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div>
+            <strong class="footer-title">Josey Barlow</strong>
+            
+                <span class="footer-subtitle">What up</span>
+            
+            <p>&copy; 2026 Josey Barlow</p>
+        </div>
+        <div style="display:flex; gap: 1.5rem;">
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">RSS</a>
         </div>
     </div>
 </footer>
 
-<div>
-    <div class="starry" id="starry"></div>
-    <div id="progressContainer"><div id="progressBar"></div></div>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
     
-<div class="sidebar-tools" id="sidebarTools"  aria-expanded="" >
-    <button class="tool-btn" id="searchBtn" aria-label="Search">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <title>Search</title>
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.35-4.35"></path>
-        </svg>
-    </button>
-    <button class="tool-btn" id="themeToggle" aria-label="Toggle theme">
-        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <title>Sun mode</title>
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <title>Moon mode</title>
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
-    <button class="tool-btn" id="scrollToTop" aria-label="Scroll to top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <title>Scroll to top</title>
-            <path d="M18 15l-6-6-6 6"/>
-        </svg>
-    </button>
-    <button class="tool-btn" id="scrollToBottom" aria-label="Scroll to bottom">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <title>Scroll to bottom</title>
-            <path d="M6 9l6 6 6-6"/>
-        </svg>
-    </button>
-    <button class="tool-btn" id="toolMenuSwitcher" aria-label="Expand/Collapse toolbar">
-        <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <title>Expand toolbar</title>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="collapse-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <title>Collapse toolbar</title>
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-    </button>
-</div>
-    <div class="interaction">
-    <div class="toast toast-success" id="shareBtnToastSuccess">
-        <span>Link copied successfully</span>
-    </div>
-    <div class="toast toast-error" id="shareBtnToastError">
-        <span>Failed to copy the link. Please try again or use a different browser</span>
-    </div>
-    <div class="toast toast-success" id="codeCopyToastSuccess">
-        <span>Copied successfully</span>
-    </div>
-    <div class="toast toast-success" id="codeCopyToastError">
-        <span>Copy failed. Please try again or use a different browser</span>
-    </div>
-    <div class="modal-overlay" id="rewardBtnModal">
-        <button class="modal-close">×</button>
-        <div class="modal-content">
-            <div class="modal-title">Thank you for your support</div>
-            <div class="model-subtitle">Scan the QR code to support the author</div>
-            <img src="/reward.jpg" class="qrcode">
-            <div class="modal-note">If this article helps, consider tipping using its title as a note</div>
-        </div>
-    </div>
-    <div class="modal-overlay" id="searchBtnModal">
-        <button class="modal-close">×</button>
-        <div class="search-content">
-            <div class="search-header">
-                <input class="search-input" id="searchInput" placeholder="Enter keywords to search..." autocomplete="off"/>
-            </div>
-            <div class="search-result">
-                <div class="state-loading" id="stateLoading">Building index library...</div>
-                <div class="state-idle search-active" id="stateIdle">Please enter keywords to start searching</div>
-                <div class="state-empty" id="stateEmpty">No matching results found</div>
-                <div class="state-searching" id="stateSearching">Searching...</div>
-                <div class="state-success" id="stateSuccess">
-                    <div>Matched results - <span id="resultNum">99</span></div>
-                    <div class="result-inner" id="result"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<script src="/js/viewer.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.js"></script>
-
-<script>(function () {
-    const ct = window.Starry.prototype.varConfiguration;
-    ct.varSearchIndex = "\/index.json";})();</script>
-
+    
 
 </body>
 </html>
